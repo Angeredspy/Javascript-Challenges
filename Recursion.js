@@ -1,0 +1,19 @@
+/*
+   Define a recursive function that asserts 
+   that a positive whole number is even or 
+   odd with the following conditions: 
+   Zero is even, One is odd, and the eveness
+   of any other number is equal to n-2.
+*/    
+
+let isEven = (someNum) => {
+    if (someNum === 0) {
+        return true;
+    } else if (someNum === 1) {
+        return false;
+    } else {
+        return isEven(someNum - 2)
+    }
+}; 
+
+console.log(isEven(22));
