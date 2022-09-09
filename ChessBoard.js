@@ -9,6 +9,14 @@ let gridSize = 8;
 let grid = ''; 
 
 for (let x = 0; x < gridSize; x++){
-
+    for (let y = 0; y < gridSize; y++){
+        if ((x+y) % 2 === 0) {
+            grid += ' '
+        } else {
+            grid += '#'
+        }
+    }
     grid += '\n';
-}
+} 
+
+console.log(grid);
