@@ -7,13 +7,14 @@
 */    
 
 let isEven = (someNum) => {
-    if (someNum === 0) {
+    if (Math.abs(someNum) === 0) {
         return true;
-    } else if (someNum === 1) {
+    } else if (Math.abs(someNum) === 1) {
         return false;
     } else {
-        return isEven(someNum - 2)
+        return isEven(Math.abs(someNum) - 2)
     }
 }; 
 
-console.log(isEven(22));
+console.log(isEven(-3));
+
