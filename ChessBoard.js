@@ -6,4 +6,9 @@
 */  
 
 let gridSize = 8; 
-let grid = '';
+let grid = ''; 
+
+for (let x = 0; x < gridSize; x++){
+
+    grid += '\n';
+}
