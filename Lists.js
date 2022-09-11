@@ -30,3 +30,9 @@ let listToArray = (someList) => {
 };
 
 console.log(listToArray(arrayToList(myArray)));
+
+let prepend = (someElement, list) => {
+    return {value: someElement, rest: list}
+} 
+
+console.log(prepend(0,arrayToList(myArray))); 
