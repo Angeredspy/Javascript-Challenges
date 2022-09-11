@@ -36,3 +36,16 @@ let prepend = (someElement, list) => {
 } 
 
 console.log(prepend(0,arrayToList(myArray))); 
+
+let nth = (list, n) => {
+    if (!list) {
+        return false;
+    }  
+    if (n == 0) {
+        return list.value
+    } else {
+        return nth(list.rest, n-1)
+    }
+}; 
+
+console.log(nth(arrayToList(myArray),2) + 'nth!');
