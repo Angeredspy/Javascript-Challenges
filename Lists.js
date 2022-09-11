@@ -7,6 +7,16 @@
     a list and prepends the element. Finally, create an 
     nth function which takes a list & a number and 
     returns the element at the given position in the list. 
+
+    The list should look like: 
+
+    { value: 3, 
+        rest: { value: 2, 
+            rest: { value: 1, 
+                rest: null 
+            } 
+        } 
+    }
 */ 
 
 let arrayToList = (someArray) => { 
