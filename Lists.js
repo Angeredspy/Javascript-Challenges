@@ -19,4 +19,14 @@ let arrayToList = (someArray) => {
 
 let myArray = [3, 2, 1]; 
 
-console.log(arrayToList(myArray))
+console.log(arrayToList(myArray)) 
+
+let listToArray = (someList) => {
+    let myArray = [];
+    for (let x = someList; x; x = x.rest) {
+        myArray.push(x.value)
+    }
+    return myArray;
+};
+
+console.log(listToArray(arrayToList(myArray)));
