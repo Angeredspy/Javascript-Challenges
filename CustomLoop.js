@@ -15,4 +15,6 @@ let customLoop = (value, test, update, body) => {
     for (let x = value; test(x); x = update(x)) {
         body(x);
     }
-}
+} 
+
+console.log(customLoop(3, (n) => n >= 0, (n) => n -= 1, console.log))
