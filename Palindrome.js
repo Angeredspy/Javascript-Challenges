@@ -11,7 +11,7 @@ let stringReverser = (someString) => {
         newStringArray.unshift(char);
     };
 
-    let reversedArray = newStringArray.reduce((a,b)=> a.concat(b))
+    let reversedArray = newStringArray.reduce((a,b)=> a.concat(b));
     let lowerCaseReversedString = reversedArray.toLowerCase();
     let lowerCaseBaseString = someString.toLowerCase();
         
