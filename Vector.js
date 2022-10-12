@@ -26,4 +26,4 @@ class Vec {
     }
 }
 
-console.log()
+console.log(new Vec(1, 2).plus(new Vec(2, 3)));
