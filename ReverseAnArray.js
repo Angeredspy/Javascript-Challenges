@@ -20,14 +20,15 @@ let myArray = [1,2,3];
 //console.log(reverseArray(myArray)); 
 //[ 3, 2, 1 ] 
 
-let reverseArrayInPlace = (arrayToReverse) => {
-    for (let x = 0; x < Math.floor(arrayToReverse.length - 1 / 2); x++) {
-        let old = arrayToReverse[x]; 
-        arrayToReverse[x] = arrayToReverse[arrayToReverse.length - 1 - x] 
-        arrayToReverse[arrayToReverse.length - 1 - x] = old
-    }
-    return arrayToReverse;
-} 
+let mySecondArray = ['Chris','Zoey','Ike','Ehi'];
 
-//console.log(reverseArrayInPlace(myArray));
-//[ 3, 2, 1 ] 
+let reverseArrayInPlace = (someArray) => {
+    for (let x = 0; x < Math.floor(someArray.length / 2); x++){
+        let old = someArray[x];
+        someArray[x] = someArray[someArray.length - 1 - x];
+        someArray[someArray.length - 1 - x] = old;
+    }
+    return mySecondArray;
+}
+
+console.log(reverseArrayInPlace(mySecondArray));
