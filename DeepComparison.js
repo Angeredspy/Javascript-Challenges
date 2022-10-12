@@ -22,7 +22,7 @@ let deepEqual = (x, y)  => {
     return true;
   }
 
-const obj1 = { name: 'Chris', age: '26', profession: 'youll see' }
+const obj1 = { name: 'Chris', age: '26', profession: 'binkomon' }
 const obj2 = { name: 'Chris', age: '26', profession: 'youll see' }
 
 console.log(deepEqual(obj1, obj2))
