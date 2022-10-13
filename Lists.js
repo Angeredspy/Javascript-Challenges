@@ -3,7 +3,7 @@
     when given an array. Consequently, produce 
     a function which builds an array from a provided list. 
     --- 
-    Create a heloper function which takes an element &
+    Create a helper function which takes an element &
     a list and prepends the element. Finally, create an 
     nth function which takes a list & a number and 
     returns the element at the given position in the list. 
