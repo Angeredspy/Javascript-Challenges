@@ -3,7 +3,7 @@
     add, delete, and has methods. 
     Its constructor creates an empty group. An Add method adds 
     a value to the group, and a Delete method removes its 
-    argument from the group and has returns a Boolean 
+    argument from the group and the 'has' method returns a Boolean 
     value indicating that the argument is a member of the group. 
     There is also a static (attached to the Class rather than instances of the Class) 
     'from' method that takes an iterable object, and creates a group 
